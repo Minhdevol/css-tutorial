@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US"> <!-- 2 chữ cái đầu (viết thường) đại diện ngôn ngữ, 2 chữ cái sau (viết hoa) đại diện cho đất nước hoặc khu vực. Gạch ngang ( - ) ở giữa là sự ngăn cách cho chữ cái đầu và sau-->
+<head>
+  <meta charset="UTF-8"> <!--đây là thẻ và thuộc tính giúp hiện chữ có dấu-->
+  <title>lang-attribute</title> <!--thẻ tiêu đề trang web-->
+  <link rel="stylesheet" href="main.css"> <!--thẻ link có file main.css là dạng External giống như Internal ở thẻ <style> -->
+  <style>
+  /* đây là dạng khác khi viết với kiểu External và Internal_theo W3s */
+    h4:lang(vi) {
+      background: red;
+    }
+    #1:lang(vi) {
+      background: red;
+    }
+    .2:lang(vi) {
+      background: red;
+    }
+  /*Hỗ trợ cho chrome 4.0 , Edge 8.0 , Opera 9.6 , Safari 3.1 , Firefox 2.0 */
+  /*-----------------------------------*/
+  </style>
+</head>
+
+<body lang="en-US"> <!--Ta được đặt thuộc tính lang vào thẻ body hoặc chỉ với những thẻ khác là "thẻ cha" chứa định dạng văn bản.-->
+  <h1 lang="en-US">hello</h1> <!--Ngoài định dạng văn bản mà thuộc tính lang được đặt, CÁC ĐỊNH DẠNG KHÁC KHÔNG ĐƯỢC ĐẶT THUỘC TÍNH LANG (ngoài thẻ cha chứa văn bản).-->
+  <h2 lang="en">My name is Minhdevol</h2> <!--Ta cũng có thể bỏ 2 chữ cái sau (bỏ luôn gạch ngang), điều đó hợp lệ-->
+  <h3 lang="vi">Bầu trời trong nhưng mây tro xám, người dưng chỉ cảm nhận được cái rát của cơn mưa nhẹ!</h3> <!--Ta cũng được đặt khai báo một ngôn ngữ khác ở trong văn bản. Theo quy chuẩn phải khai báo đúng ngôn ngữ chứa văn bản ở thẻ (không cần khai báo 2 chữ cái sau)-->
+  <h4 id="1" class="2"> anh ta bị bỏng miệng, khô rát với vết thương được dệt bởi nước mưa từ đám mây đó!</h4> <!--Đây là dạng khác để khai báo bằng cách sử dụng Internal và External bằng việc áp dụng phương pháp "lớp giả" qua việc gọi tag-->
+</body>
+</html>
