@@ -1,0 +1,47 @@
+<html lang="en">
+   <head>
+      <style>
+        <!-- !important - 10000 -->
+        * {
+           color: purple;
+        }
+        <!-- Equal specificity - 111 -->
+        h1#red-text.green-text {
+           color: violet;
+        }
+        <!-- Equal specificity - 110 -->
+        #red-text.green-text {
+           color: yellow;
+        }
+        <!-- id - 100 -->
+        #red-text {
+           color: red;
+        }
+        <!-- class - 10 -->
+        .green-text {
+           color: green;
+        }
+        <!-- tag - 1 -->
+        h1 {
+           color: blue;
+        }
+        <!-- Universal selector and inherited - 0 -->
+        * {
+           color: brown;
+        }
+      </style>
+   </head>
+   <body>
+     <h1 style="color: violet;"  id="red-text" class="green-text"> hi <3 </h1>
+     <p lang="en"> ranking: <p>
+      <ul lang="en">
+           <li>1. Internal, External</li>
+           <li>2. Inline - 1000</li>
+           <li>3. id - 100</li>
+           <li>4. class - 10</li>
+           <li>5. tag - 1</li>
+           <li>6. Equal specificity? - 111</li>
+           <li>7. Universal selector and inherited? - 0</li>
+           <li>8. !important - 10000 </li>
+   </body>
+</html>
