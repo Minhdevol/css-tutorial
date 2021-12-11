@@ -4,26 +4,38 @@
   <meta charset="UTF-8">
   <title>how to use href</title>
   <link rel="stylesheet" href="main.css"> <!-- href được sử dụng để gọi file css thay cho việc dùng dạng Internal-->
+  <style>
+    hr {
+      background: #919AFF;
+      border: 1.5px solid #919AFF;
+    }
+  </style>
 </head>
 
-<body>
-  <ol>
-    <li>Simple link: <a href="https://www.google.com/search?q=What+is+the+href+attribute%3F&oq=What+is+the+href+attribute">https://www.google.com/search?q=What+is+the+href+attribute%3F&oq=What+is+the+href+attribute</a></li> <!-- Đây là cách đặt href với thẻ <a href=""></a> thường dùng-->
-    <li>Hyper link: <a href="https://docs.google.com/document/d/1uaYdJhY2ttsvcoY4EgqBnMH6GgVZtz-HfNKETwljDnM/edit?usp=drivesdk">https://docs.google.com/document/d/1uaYdJhY2ttsvcoY4EgqBnMH6GgVZtz-HfNKETwljDnM/edit?usp=drivesdk</a></li> <!--Ta dùng hyper link bằng cách đặt theo quy chuẩn-->
-    <li>File: <a href="image-file.jpg">image-file.jpg</a></li> <!-- Với dạng dẫn path đến tập tin, nếu nằm cùng trong một file ta có thể gọi thẳng tên tệp-->
+<body style="background: #C4FFAD;">
+    <p>Simple link: <a href="https://www.google.com/search?q=What+is+the+href+attribute%3F&oq=What+is+the+href+attribute">https://www.google.com/search?q=What+is+the+href+attribute%3F&oq=What+is+the+href+attribute</a></p> <!-- Đây là cách đặt href với thẻ <a href=""></a> thường dùng-->
+    <p>Hyper link: <a href="https://docs.google.com/document/d/1uaYdJhY2ttsvcoY4EgqBnMH6GgVZtz-HfNKETwljDnM/edit?usp=drivesdk">https://docs.google.com/document/d/1uaYdJhY2ttsvcoY4EgqBnMH6GgVZtz-HfNKETwljDnM/edit?usp=drivesdk</a></p> <!--Ta dùng hyper link bằng cách đặt theo quy chuẩn-->
+    <p>File: <a href="image-file.jpg">image-file.jpg</a></p> <!-- Với dạng dẫn path đến tập tin, nếu nằm cùng trong một file ta có thể gọi thẳng tên tệp-->
     <!-- Với dạng nằm trong tệp này tệp kia ta gõ "./tên tệp chứa file hoặc tên file/.../tên file"kết thúc ở file cần tìm không gõ thêm gì ngoài tên file cuối tìm được-->
-    <li>Website: <a href="https://www.w3schools.com/">https://www.w3schools.com/</a></li> <!--Ta vẫn đặt theo những quy chuẩn hay dùng trên-->
+    <p>Website: <a href="https://www.w3schools.com/">https://www.w3schools.com/</a></p> <!--Ta vẫn đặt theo những quy chuẩn hay dùng trên-->
+    <hr />
     <p>Ẩn link</p> <!--Đây là cách ẩn đi tên link bằng việc đổi tên ở giữa thẻ mở và đóng của thẻ <a>-->
-    <li>Link đơn giản: <a href="https://www.google.com/search?q=What+is+the+href+attribute%3F&oq=What+is+the+href+attribute">What is the href attribute</a></li>
-    <li>Link siêu liên kết: <a href="https://docs.google.com/document/d/1uaYdJhY2ttsvcoY4EgqBnMH6GgVZtz-HfNKETwljDnM/edit?usp=drivesdk">văn bản</a></li>
-    <li>File: <a href="image-file.jpg">hình ảnh</a></li>
-    <li>Website: <a href="https://www.w3schools.com/">w3schools.com</a></li>
-    
-    <p>Neo </p> <!--Đây là một cách khác để sử dụng href được gọi là BĂM (hash #) dùng để dẫn từ phần tử này sang phần tử khác trong html-->
+    <p>Link đơn giản: <a href="https://www.google.com/search?q=What+is+the+href+attribute%3F&oq=What+is+the+href+attribute">What is the href attribute</a></p>
+    <p>Link siêu liên kết: <a href="https://docs.google.com/document/d/1uaYdJhY2ttsvcoY4EgqBnMH6GgVZtz-HfNKETwljDnM/edit?usp=drivesdk">văn bản</a></p>
+    <p>File: <a href="image-file.jpg">hình ảnh</a></p>
+    <p>Website: <a href="https://www.w3schools.com/">w3schools.com</a></p>
+    <hr />
+    <p>Dạng nâng cao của href đối với thẻ "a" </p>
+    <p>Image-link: <a href="https://github.com/Minhdevol"><img src="image-file.jpg" style="width: 50px; height: 50px;" /></a></p> <!--Đây là dạng dùng hình ảnh để làm link thông qua chức năng của thẻ a và href-->
+    <p>Send-mail-link: <a href="mailto:quangminh5804@gmail.com">Send mail</a></p> <!--Đây là dạng sử dụng cú pháp mailto: ...@...com (gửi đến ai-đó@...com)-->
+    <p>Phone-numble-call-link: <a href="tel:+84378255804">03782558004</a></p> <!--Đây là dạng sử dụng cú pháp tel: mã vùng-nước+số điện thoại Ví dụ: ta có số 0378474837 ở Việt Nam -> cú pháp là href="tel:+84378474837" -->
+    <p>JavaScript-link: <a href="javascript:alert('Hi, I am Minhdevol');">description</a></p> <!-- Bổ sung sau -->
+    <p>Neo: </p> <!--Đây là một cách khác để sử dụng href được gọi là BĂM (hash #) dùng để dẫn từ phần tử này sang phần tử khác trong html-->
     <!--Ta sử dụng cách này bằng việc sử dụng thuộc tính id ở phần tử cần di chuyển bằng cú pháp href="#tên-id"-->
-    <li id="9">Di chuyển tới: <a href="#10">Mục cuối</a></li>
-    <div style="height: 2000px;"></div>
-    <li id="10">Di chuyển tới: <a href="#9">Mục đầu</a></li>
-  </ol>
+    <ol>
+      <li id="9">Di chuyển tới: <a href="#10">Mục cuối</a></li>
+      <div style="height: 500px;width: 162px;background: #939CFF;"></div>
+      <li id="10">Di chuyển tới: <a href="#9">Mục đầu</a></li>
+    </ol>
 </body>
 </html>
