@@ -15,7 +15,7 @@
 <body style="background: #C4FFAD;">
     <p>Simple link: <a href="https://www.google.com/search?q=What+is+the+href+attribute%3F&oq=What+is+the+href+attribute">https://www.google.com/search?q=What+is+the+href+attribute%3F&oq=What+is+the+href+attribute</a></p> <!-- Đây là cách đặt href với thẻ <a href=""></a> thường dùng-->
     <p>Hyper link: <a href="https://docs.google.com/document/d/1uaYdJhY2ttsvcoY4EgqBnMH6GgVZtz-HfNKETwljDnM/edit?usp=drivesdk">https://docs.google.com/document/d/1uaYdJhY2ttsvcoY4EgqBnMH6GgVZtz-HfNKETwljDnM/edit?usp=drivesdk</a></p> <!--Ta dùng hyper link bằng cách đặt theo quy chuẩn-->
-    <p>File: <a href="image-file.jpg">image-file.jpg</a></p> <!-- Với dạng dẫn path đến tập tin, nếu nằm cùng trong một file ta có thể gọi thẳng tên tệp-->
+    <p>File: <a href="./Image/image-file-2.png">image-file-2.png</a></p> <!-- Với dạng dẫn path đến tập tin, nếu nằm cùng trong một file ta có thể gọi thẳng tên tệp-->
     <!-- Với dạng nằm trong tệp này tệp kia ta gõ "./tên tệp chứa file hoặc tên file/.../tên file"kết thúc ở file cần tìm không gõ thêm gì ngoài tên file cuối tìm được-->
     <p>Website: <a href="https://www.w3schools.com/">https://www.w3schools.com/</a></p> <!--Ta vẫn đặt theo những quy chuẩn hay dùng trên-->
     <hr />
@@ -26,10 +26,15 @@
     <p>Website: <a href="https://www.w3schools.com/">w3schools.com</a></p>
     <hr />
     <p>Dạng nâng cao của href đối với thẻ "a" </p>
-    <p>Image-link: <a href="https://github.com/Minhdevol"><img src="image-file.jpg" style="width: 50px; height: 50px;" /></a></p> <!--Đây là dạng dùng hình ảnh để làm link thông qua chức năng của thẻ a và href-->
+    <p>Image-link: <a href="https://github.com/Minhdevol"><img src="image-file.jpg" style="width: 50px; height: 50px;" /></a></p> <!--Đây là dạng dùng hình ảnh để làm link thông qua chức năng của thẻ a và href--> 
+    <!-- tương tự nó cũng áp dụng việc gán liên kết ở thẻ <a> với định dạng phù hợp-->
     <p>Send-mail-link: <a href="mailto:quangminh5804@gmail.com">Send mail</a></p> <!--Đây là dạng sử dụng cú pháp mailto: ...@...com (gửi đến ai-đó@...com)-->
-    <p>Phone-numble-call-link: <a href="tel:+84378255804">03782558004</a></p> <!--Đây là dạng sử dụng cú pháp tel: mã vùng-nước+số điện thoại Ví dụ: ta có số 0378474837 ở Việt Nam -> cú pháp là href="tel:+84378474837" -->
-    <p>JavaScript-link: <a href="javascript:alert('Hi, I am Minhdevol');">description</a></p> <!-- Bổ sung sau -->
+    <p>Phone-numble-link: <a href="tel:+84378255804">03782558004</a></p> <!--Đây là dạng sử dụng cú pháp tel: mã vùng-nước+số điện thoại Ví dụ: ta có số 0378474837 ở Việt Nam -> cú pháp là href="tel:+84378474837" -->
+    <p>JavaScript-link:</p>
+    <p>Alert-box (hộp cảnh báo): <a href="javascript:alert('Hi, I am Minhdevol\nThis is a alert-box');">alert-box or popup-box</a></p> <!--javascript:alert(''); dùng để hiện hộp cảnh báo trong html--> 
+    <!-- cú pháp \n dùng để xuống dòng được áp dụng cho cả 3 thể loại-->
+    <p>confirm-box (hộp xác nhận): <a href="javascript:confirm('This is a confirm box');">confirm-box</a></p> <!--javascript:confirm(''); dùng để hiện hộp xác nhận vì có hai nút "hủy" và "ok" trong html-->
+    <p>prompt-box (hộp ghi chú): <a href="javascript:prompt('This is a prompt box\nYou can write this box and ok or you can touch cancel', 'https://youtu.be/dQw4w9WgXcQ');">prompt-box</a></p> <!--javascript:prompt('dùng để hiện thị định dạng', 'hiển thị dòng nhập chữ bằng định dạng chữ')-->
     <p>Neo: </p> <!--Đây là một cách khác để sử dụng href được gọi là BĂM (hash #) dùng để dẫn từ phần tử này sang phần tử khác trong html-->
     <!--Ta sử dụng cách này bằng việc sử dụng thuộc tính id ở phần tử cần di chuyển bằng cú pháp href="#tên-id"-->
     <ol>
