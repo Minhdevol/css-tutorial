@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <base href="" target="_blank" />
+    <style>
+      h2 {
+        font-size: 58px;
+      }
+      h3 {
+        font-size: 58px;
+      }
+      p {
+        font-size: 48px;
+      }
+    </style>
+</head>
+
+<body> <!--Thuộc tính này có thể áp dụng mở một liên kết bằng các định dạng khác nhau hoặc phần tử nằm trong thẻ a-->
+  <h2>Dạng hay dùng</h2>
+  <p>_blank (dẫn liên kết mở qua một cửa sổ hay tab mới): <a href="https://github.com/Minhdevol" target="_blank">introduce</a></p> 
+  <p>_self (dẫn liên kết mở tại tab đang dùng): <a href="https://en.m.wikipedia.org/wiki/Developer_(album)" target="_self">introduce</a></p>
+  <h3>Dạng phức tạp hơn</h3>
+  <img src="iframe-target.jpg" width="600px" height="380px"/>
+  <p>Hãy tưởng tượng một trang web chứa 3 cái&nbsp; <<code>iframe</code>>&nbsp; hay còn gọi là "frame" / "frameset" lồng nhau . Vì thế:</p>
+  <ul>
+    <li><p>trang web / trình duyệt ngoài cùng là bối cảnh bắt đầu</p></li>
+    <li><p>trang web / trình duyệt ngoài cùng là bối cảnh bắt đầu</p></li>
+    <li><p>khung 3 là cha của khung 2</p></li>
+    <li><p>khung 2 là cha của khung 1</p></li>
+    <li><p>khung 1 là khung trong cùng</p></li>
+  </ul>
+  <p>Sau đó, các thuộc tính mục tiêu có những hiệu ứng sau:</p>
+  <ul>
+    <li><p>Nếu khung 1 có liên kết với <code>target="_self"</code> , liên kết nhắm mục tiêu đến khung 1 (tức là liên kết nhắm mục tiêu đến khung chứa liên kết (tức là nhắm mục tiêu chính nó))</p></li>
+    <li><p>Nếu khung 1 có liên kết với <code>target="_parent"</code> , liên kết nhắm mục tiêu đến khung 2 (tức là liên kết nhắm mục tiêu đến khung mẹ )</p></li>
+    <li><p>Nếu khung 1 có liên kết với <code>target="_top"</code> , liên kết nhắm mục tiêu đến trang web ban đầu (tức là liên kết nhắm mục tiêu đến khung trên cùng / ngoài cùng ; (trong trường hợp này; liên kết bỏ qua khung ông lớn 3))</p><ul>
+      <li><p>Nếu khung 2 có một liên kết với <code>target="_top"</code> , liên kết cũng nhắm vào các trang web ban đầu (tức là một lần nữa, liên kết nhằm vào / khung ngoài cùng trên cùng )</p></li>
+    </ul></li>
+    <li><p>Nếu bất kỳ khung nào trong số này có liên kết với <code>target="_blank"</code> , liên kết nhắm mục tiêu đến ngữ cảnh duyệt bổ trợ , còn gọi là "cửa sổ mới" / "tab mới"</p><ul>
+      <li><p>Điều này áp dụng cho khung 3, khung 2, khung 1 và trang web ngoài cùng. Hãy cẩn thận với "tabnabbing" trong trường hợp <code>target="_blank"</code></p></li>
+    </ul></li>
+  </ul>
+  </body>
+</html>
